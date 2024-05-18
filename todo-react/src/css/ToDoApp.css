@@ -1,0 +1,40 @@
+.ToDoApp {
+    min-height: 100dvh !important;
+    background-color: aqua !important;
+}
+
+.ToDoApp .perant {
+    min-height: 100dvh !important;
+}
+
+.iconName {
+    height: 50px !important;
+    width: 50px !important;
+    justify-self: center !important;
+}
+
+.floatButton {
+    position: fixed;
+    bottom: 10px;
+}
+
+
+.inputRadio[type="radio"] {
+    width: 30px;
+    height: 30px;
+}
+
+.wrapText {
+    width: 40dvw !important;
+    word-wrap: break-word !important;
+}
+
+.wrapEmail{
+    text-align: center;
+    width: 14dvw !important;
+    word-wrap: break-word !important;
+}
+
+svg.icon{
+    font-size: 30px;
+}
