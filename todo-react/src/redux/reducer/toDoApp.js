@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export const getApi = createAsyncThunk('users/fetchByIdStatus', async () => {
     let getAll = []
-    await axios.get('http://192.168.178.66:4000/todo', { headers: { Authorization: localStorage.getItem('token') } })
+    await axios.get('https://to-do-app-mern-bf0eb3deb0e2.herokuapp.com/todo', { headers: { Authorization: localStorage.getItem('token') } })
         .then((e) => {
             // console.log(e.data)
             return (
