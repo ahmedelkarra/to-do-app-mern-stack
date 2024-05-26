@@ -16,7 +16,7 @@ const AddTask = () => {
 
     const addTask = () => {
         try {
-            axios.post('http://192.168.178.66:4000/todo', valueAddTask, { headers: { Authorization: localStorage.getItem('token') } })
+            axios.post('https://to-do-app-mern-bf0eb3deb0e2.herokuapp.com/todo', valueAddTask, { headers: { Authorization: localStorage.getItem('token') } })
                 .then(() => {
                     console.log('Task Has Been Created')
                     dispatch(getApi())
