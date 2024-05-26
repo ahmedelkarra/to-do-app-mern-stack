@@ -16,7 +16,7 @@ const MyAccount = () => {
         console.log(e);
         e.preventDefault()
         let statusIsDone = false
-        axios.patch(`http://localhost:4000/me/${allData[0]?._id}`, { changeAccount }, { headers: { Authorization: localStorage.getItem('token') } })
+        axios.patch(`https://to-do-app-mern-bf0eb3deb0e2.herokuapp.com/me/${allData[0]?._id}`, { changeAccount }, { headers: { Authorization: localStorage.getItem('token') } })
             .then((e) => console.log("Done Change"))
             .catch((err) => console.error(err))
     }
