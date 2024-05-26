@@ -21,7 +21,7 @@ const RegisterForm = () => {
     const register = async (e) => {
         e.preventDefault()
         if (registerValue.pass === registerValue.passConfirm && registerValue.pass.length !== 0 && registerValue.passConfirm.length !== 0) {
-            await axios.post('http://192.168.178.66:4000/register', registerValue)
+            await axios.post('https://to-do-app-mern-bf0eb3deb0e2.herokuapp.com/register', registerValue)
                 .then((e) => {
                     console.log(e.data)
                     handleCloseRegister()
